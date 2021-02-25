@@ -1,0 +1,3 @@
+﻿  CaveStory.cpp
+  graphics.cpp
+LINK : fatal error LNK1181: nie można otworzyć pliku wejściowego „SDL.lib”

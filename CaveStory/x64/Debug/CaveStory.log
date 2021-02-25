@@ -1,0 +1,7 @@
+﻿  game.cpp
+C:\Users\user\source\repos\CaveStory\CaveStory\game.cpp(56,24): warning C4244: "argument": konwersja z "const _Ty" do "float", możliwa utrata danych
+          with
+          [
+              _Ty=int
+          ]
+  CaveStory.vcxproj -> C:\Users\user\source\repos\CaveStory\x64\Debug\CaveStory.exe
