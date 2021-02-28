@@ -19,6 +19,12 @@
     <Filter Include="Pliki źródłowe\src">
       <UniqueIdentifier>{efa940be-9f4b-4da5-9ddc-8335e0b1ace6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="content">
+      <UniqueIdentifier>{43c1d925-9a8a-4bed-aeb0-eaf5ffe8022b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="content\sprites">
+      <UniqueIdentifier>{5a360842-acbc-4325-bbf3-839e261b4c51}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="graphics.cpp">
@@ -31,6 +37,9 @@
       <Filter>Pliki źródłowe\src</Filter>
     </ClCompile>
     <ClCompile Include="input.cpp">
+      <Filter>Pliki źródłowe\src</Filter>
+    </ClCompile>
+    <ClCompile Include="sprite.cpp">
       <Filter>Pliki źródłowe\src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,10 +56,21 @@
     <ClInclude Include="input.h">
       <Filter>Pliki źródłowe\headers</Filter>
     </ClInclude>
+    <ClInclude Include="sprite.h">
+      <Filter>Pliki źródłowe\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Pliki źródłowe\headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CaveStory.rc">
       <Filter>Pliki zasobów</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\doukutsu\data\MyChar.png">
+      <Filter>content\sprites</Filter>
+    </None>
   </ItemGroup>
 </Project>
