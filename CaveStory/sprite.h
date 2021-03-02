@@ -22,10 +22,10 @@ public:
 	virtual void update();
 		//Sends graphics class object with position of sprite to draw function
 	void draw(Graphics &graphics, int x, int y);
-private:
+protected:
 	SDL_Rect _sourceRect;
 	SDL_Texture* _spriteSheet;
-
+private:
 	float _x, _y;
 };
 
