@@ -1,8 +1,5 @@
-﻿  game.cpp
-C:\Users\user\source\repos\CaveStory\CaveStory\game.cpp(59,24): warning C4244: 'argument': conversion from 'const _Ty' to 'float', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\user\source\repos\CaveStory\CaveStory\game.cpp(75,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+﻿  player.cpp
+C:\Users\user\source\repos\CaveStory\CaveStory\player.cpp(49,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\user\source\repos\CaveStory\CaveStory\player.cpp(53,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\user\source\repos\CaveStory\CaveStory\player.cpp(53,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   CaveStory.vcxproj -> C:\Users\user\source\repos\CaveStory\x64\Debug\CaveStory.exe

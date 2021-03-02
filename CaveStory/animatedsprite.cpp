@@ -1,9 +1,10 @@
 #include "animatedsprite.h"
-#include "sprite.h"
 #include "graphics.h"
+#include "sprite.h"
 
-
-
+/* AnimatedSprite class
+ * Animates our sprites
+ */
 
 AnimatedSprite::AnimatedSprite() {}
 
@@ -22,9 +23,14 @@ void AnimatedSprite::addAnimation(int frames, int x, int y, std::string name, in
 	for (int i = 0; i < frames; i++) {
 		SDL_Rect newRect = { (i + x) * width, y, width, height };
 		rectangles.push_back(newRect);
-		}
+	}
 	this->_animations.insert(std::pair<std::string, std::vector<SDL_Rect> >(name, rectangles));
 	this->_offsets.insert(std::pair<std::string, Vector2>(name, offset));
+}
+
+void AnimatedSprite::resetAnimations() {
+	this->_animations.clear();
+	this->_offsets.clear();
 }
 
 void AnimatedSprite::playAnimation(std::string animation, bool once) {
@@ -53,19 +59,14 @@ void AnimatedSprite::update(int elapsedTime) {
 		if (this->_frameIndex < this->_animations[this->_currentAnimation].size() - 1) {
 			this->_frameIndex++;
 		}
-
 		else {
 			if (this->_currentAnimationOnce == true) {
 				this->setVisible(false);
 			}
-
 			this->_frameIndex = 0;
 			this->animationDone(this->_currentAnimation);
-
 		}
-
 	}
-
 }
 
 void AnimatedSprite::draw(Graphics& graphics, int x, int y) {
@@ -80,13 +81,3 @@ void AnimatedSprite::draw(Graphics& graphics, int x, int y) {
 		graphics.blitSurface(this->_spriteSheet, &sourceRect, &destinationRectangle);
 	}
 }
-
-void AnimatedSprite::animationDone(std::string currentAnimation) {
-
-}
-
-void AnimatedSprite::setupAnimations() {
-	this->addAnimation(3, 0, 0, "RunLeft", 16, 16, Vector2(0, 0));
-	this->addAnimation(3, 0, 16, "RunRight", 16, 16, Vector2(0, 0));
-}
-
