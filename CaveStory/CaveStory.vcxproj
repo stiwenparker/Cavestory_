@@ -80,8 +80,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\user\source\repos\SDL2-2.0.14\include;C:\Users\user\source\repos\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\user\source\repos\SDL2_image-2.0.5\lib\x64;C:\Users\user\source\repos\SDL2-2.0.14\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>F:\SDL\SDL2_image-2.0.5\include;F:\SDL\SDL2-2.0.14\include;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\SDL\SDL2_image-2.0.5\lib\x64;F:\SDL\SDL2-2.0.14\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -153,6 +153,7 @@
     <ClCompile Include="game.cpp" />
     <ClCompile Include="graphics.cpp" />
     <ClCompile Include="input.cpp" />
+    <ClCompile Include="level.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="sprite.cpp" />
   </ItemGroup>
@@ -162,6 +163,7 @@
     <ClInclude Include="globals.h" />
     <ClInclude Include="graphics.h" />
     <ClInclude Include="input.h" />
+    <ClInclude Include="level.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="sprite.h" />
@@ -171,6 +173,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\Downloads\doukutsu\data\MyChar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bkBlue.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

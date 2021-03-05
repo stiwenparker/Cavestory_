@@ -25,6 +25,9 @@
     <Filter Include="content\sprites">
       <UniqueIdentifier>{5a360842-acbc-4325-bbf3-839e261b4c51}</UniqueIdentifier>
     </Filter>
+    <Filter Include="content\backgrounds">
+      <UniqueIdentifier>{d9bab222-1bdd-4ba7-ba49-b21722fe4312}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="graphics.cpp">
@@ -46,6 +49,9 @@
       <Filter>Pliki źródłowe\src</Filter>
     </ClCompile>
     <ClCompile Include="player.cpp">
+      <Filter>Pliki źródłowe\src</Filter>
+    </ClCompile>
+    <ClCompile Include="level.cpp">
       <Filter>Pliki źródłowe\src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,6 +80,9 @@
     <ClInclude Include="player.h">
       <Filter>Pliki źródłowe\headers</Filter>
     </ClInclude>
+    <ClInclude Include="level.h">
+      <Filter>Pliki źródłowe\headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CaveStory.rc">
@@ -84,5 +93,10 @@
     <None Include="..\..\..\..\Downloads\doukutsu\data\MyChar.png">
       <Filter>content\sprites</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bkBlue.png">
+      <Filter>content\backgrounds</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -13,13 +13,13 @@ class Player : public AnimatedSprite {
 		void draw(Graphics& graphics);
 		void update(float elapsedTime);
 
-		//moves the player left with -dx
+			//moves the player left with -dx
 		void moveLeft();
 	
-		//moves the player right with dx
+			//moves the player right with dx
 		void moveRight();
 
-		//stops moving the player
+			//stops moving the player
 		void stopMoving();
 
 		virtual void animationDone(std::string currentAnimation);

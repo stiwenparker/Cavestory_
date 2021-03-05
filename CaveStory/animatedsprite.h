@@ -10,9 +10,7 @@
 
 class Graphics;
 
-/* AnimatedSprite class
- * Holds logic for animating sprites
- */
+	//class that hold logic for animated sprites
 
 class AnimatedSprite : public Sprite {
 	public:
@@ -20,19 +18,13 @@ class AnimatedSprite : public Sprite {
 		AnimatedSprite(Graphics& graphics, const std::string& filePath, int sourceX, int sourceY, int width, int height,
 			float posX, float posY, float timeToUpdate);
 
-		/* void playAnimation
-		 * Plays the animation provided if it's not already playing
-		 */
+			//plays the animation if not already played
 		void playAnimation(std::string animation, bool once = false);
 
-		/* void update
-		 * Updates the animated sprite (timer)
-		 */
+			//timer to update current animation
 		void update(int elapsedTime);
 
-		/* void draw
-		 * Draws the sprite to the screen
-		 */
+			//draws the sprite to window
 		void draw(Graphics& graphics, int x, int y);
 
 	protected:
@@ -42,22 +34,22 @@ class AnimatedSprite : public Sprite {
 
 
 
-		//adds an anmiation to the animation map
+			//adds an anmiation to the animation map
 		void addAnimation(int frames, int x, int y, std::string name, int width, int height, Vector2 offset);
 
-		//resets all animation associated with that sprite
+			//resets all animation associated with that sprite
 		void resetAnimations();
 
-		//stops the animation
+			//stops the animation
 		void stopAnimation();
 
-		//changes the visibility of animated sprite
+			//changes the visibility of animated sprite
 		void setVisible(bool visible);
 
-		//it gets called when animation is over
+			//it gets called when animation is over
 		virtual void animationDone(std::string currentAnimation) = 0;
 
-		//function that set ups all animations for the sprite
+			//function that set ups all animations for the sprite
 		virtual void setupAnimations() = 0;
 
 	private:
